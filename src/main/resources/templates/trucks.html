@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Available Trucks</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+</head>
+<body>
+<h1>Truck list</h1>
+<table class="table table-dark">
+    <thead>
+        <th scope="col">Applicant</th>
+        <th scope="col">Location</th>
+        <th scope="col">facilityType</th>
+        <th scope="col">foodItems</th>
+        <th scope="col">latitude</th>
+        <th scope="col">longitude</th>
+    </thead>
+    <tbody>
+    <tr th:each="truck: ${trucks}">
+        <td th:text="${truck.applicant}">Applicant</td>
+        <td th:text="${truck.locationId}">LocationId</td>
+        <td th:text="${truck.facilityType}">facilityType</td>
+        <td th:text="${truck.foodItems}">foodItems</td>
+        <td th:text="${truck.latitude}">latitude</td>
+        <td th:text="${truck.foodItems}">longitude</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

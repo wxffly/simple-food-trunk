@@ -1,4 +1,4 @@
-# Food Truck
+# Simple Food Truck
  The goal of this code is to print out a list of food trucks, given a source of food truck data 
  from the San Francisco government’s API.
  <br>
